@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+:root {
+    --original-orange: hsl(25, 97%, 53%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --light-grey: hsl(217, 12%, 63%);
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Overpass', sans-serif;
+}
+
+.container {
+    width: 400px;
+    background: linear-gradient(var(--dark-blue), hsl(216, 12%, 8%));
+    border-radius: 5%;
+    height: 380px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .rating {
+    visibility: visible;
+    position: absolute;
+    margin: 30px;
+}
+
+.rating .start {
+    background-color: var(--dark-blue);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.rating .start img {
+    width: 15px;
+    height: 15px;
+}
+
+.rating h1 {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.rating p {
+    font-size: 15px;
+    color: var(--light-grey);
+    font-weight: 400;
+}
+
+.rating-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px auto;
+}
+
+.rating-btn .btn {
+    background-color: var(--dark-blue);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    color: var(--light-grey);
+}
+
+.rating-btn .btn:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: #fff;
+}
+
+.rating-btn .btn.selected {
+    background-color: var(--original-orange);
+    color: #fff;
+}
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 1.5em;
+    background-color: var(--original-orange);
+    color: #fff;
+}
+
+.submit:hover {
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 1.5em;
+    background-color: #fff;
+    color: var(--original-orange);
+}
+
+.container .thank-you {
+    position: absolute;
+    visibility: hidden;
+    text-align: center;
+    margin: 30px;
+}
+
+.thank-you p {
+    font-size: 15px;
+    color: var(--light-grey);
+    font-weight: 400;
+}
+
+.thank-you p span {
+    background-color: var(--dark-blue);
+    padding: 0.5em 1em;
+    border-radius: 1.5em;
+    color: var(--original-orange);
+}
+
+.thank-you h1 {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 45px auto 10px;
+}
